@@ -1,4 +1,5 @@
 import React, {useState, createContext} from 'react'
+
 export const moviesConsumer=createContext();
 export function MoviesProvider(props) {
     const [movies, setMovies]=useState([
@@ -6,6 +7,7 @@ export function MoviesProvider(props) {
             id:1,
             title:"3 Idiots",
             price:"100$",
+            
         },
         {
             id:2,
