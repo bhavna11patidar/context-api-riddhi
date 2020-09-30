@@ -5,13 +5,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  NavItem
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
 
@@ -33,6 +27,9 @@ export default function Header() {
                   </NavItem>
                   <NavItem>
                     <Link className="nav-link" to="/view-movies">View Movies</Link>
+                  </NavItem>
+                  <NavItem>
+                    <Link className="nav-link" to="/lifecycle-methods">Life Cycle Methods</Link>
                   </NavItem>
                     </Nav>
               </Collapse>
