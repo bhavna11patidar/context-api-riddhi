@@ -3,10 +3,11 @@ import {moviesConsumer} from './ContextMovies';
 export default function Movie(props) {
     const [movies, setMovies]=useContext(moviesConsumer);
     const deleteMovie=(id)=>{
-        let filteredMovies=movies.filter((d, i)=>{
+       /* let filteredMovies=movies.filter((d, i)=>{
             return d.id!==id;
         })
-        setMovies(filteredMovies);
+        */
+        setMovies({type:"DELETE_MOVIES",payload:id});
     }
     return (
         <div className="col-md-4" key={props.d.id}>

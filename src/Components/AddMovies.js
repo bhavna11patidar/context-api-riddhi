@@ -13,7 +13,8 @@ export default function AddMovies() {
     const onAddMovies=()=>{
         //console.log(formData);
         const id=movies.length+1;
-        setMovies(movies=>[...movies, {id:id, title:formData.title, price:formData.price}]);
+        //setMovies(movies=>[...movies, {id:id, title:formData.title, price:formData.price}]);
+        setMovies({type:"ADD_MOVIES",payload:{id:id, title:formData.title, price:formData.price}})
 
     }
     return (
